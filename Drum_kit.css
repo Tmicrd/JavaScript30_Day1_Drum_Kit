@@ -19,23 +19,35 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  transition: all 0.07s;
+  transition: all 1s;
 }
 
 .keys .key {
-  width: 3.8rem;
-  height: 3.8rem;
+  width: 4rem;
+  height: 4rem;
   margin: 0 auto;
   margin: 1rem;
   font-size: 1.5rem;
   text-align: center;
   border-radius: 25%;
-  background: #bcffb9;
   box-shadow: 0.1em 0.1em 0.2em #ffc1f3, -0.5em 0 0.4em #ffc764;
-  transition: all 0.07s;
+  transition: all 1s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background: #bcffb9; */
+}
+
+.keys > :nth-child(3n+1) {
+  background: #FF8882;
+}
+
+.keys > :nth-child(3n+2) {
+  background: #FFC2B4;
+}
+
+.keys > :nth-child(3n+3) {
+  background: #9DBEB9;
 }
 
 .key kbd {
@@ -50,6 +62,5 @@ body {
 }
 
 .playing {
-  transform: scale(1.1);
-  border: 0.3rem solid #ffcead;
+  transform: scale(1.2);
 }
